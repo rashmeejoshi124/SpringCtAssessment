@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="28dp"
+        tools:context=".AddEmployeeActivity">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/title"
+            style="@style/TextAppearance.Material3.ActionBar.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Add Employee Details"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/emp_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint=" Employee name"
+            android:inputType="text"
+            app:layout_constraintTop_toBottomOf="@id/title" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/emp_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" Age"
+            android:inputType="number"
+            app:layout_constraintTop_toBottomOf="@id/emp_name" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/emp_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" Address"
+            android:inputType="textPostalAddress"
+            app:layout_constraintTop_toBottomOf="@id/emp_age" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/emp_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" City"
+            android:inputType="text"
+            app:layout_constraintTop_toBottomOf="@id/emp_address" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/add_emp"
+            style="button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text=" Add "
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/emp_city" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
